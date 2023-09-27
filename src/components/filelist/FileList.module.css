@@ -1,0 +1,17 @@
+.filelist{
+    position: relative;
+    left:250px; 
+    height: 80vh;
+    overflow: scroll;
+    overflow-y: auto; 
+    overflow-x: hidden;
+    max-height: fit-content;
+}
+.filelist p{
+    padding: 10px 0px;
+    font-weight: 500;
+    border-bottom: 1px solid #133a39;
+    font-size: 14px;
+    width: 400px;
+    
+}

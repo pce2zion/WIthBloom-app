@@ -1,0 +1,17 @@
+.main{
+    display: flex;
+    justify-content: space-around;
+}
+.flex{
+    background-color: white;
+    height: 98vh;
+    margin-top: 10px;
+    margin-right: 7px;
+    border-radius: 20px;
+}
+.convo{
+    position: relative;
+    bottom: 695px;
+    left: 800px;
+    width: 400px;
+}

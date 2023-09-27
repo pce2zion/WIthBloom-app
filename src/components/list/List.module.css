@@ -1,0 +1,170 @@
+.list{
+    background-color: white;
+    position: relative;
+    left: 30px;
+    
+}
+.welcome{
+    position: relative;
+    right: 130px;
+    width: 500px;
+    font-weight: 500;
+    color: #133a39;
+}
+.welcome h1{
+    position: relative;
+   top: 50px;
+}
+.welcome p{
+   font-weight: 300;
+   position: relative;
+   top: 65px;
+   
+}
+.wallet{
+    position: relative;
+    top: 95px;
+    right: 130px;
+    width: 350px;
+    height: 200px;
+    background-color: #133a39;
+    border-radius: 10px;
+    box-shadow:5px 5px 5px #929696;
+}
+ .eth{
+   position: relative;
+   top: 12px;
+   left: 12px;
+}
+.eth span{
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    position: relative;
+    bottom: 7px;
+    left: 7px;
+
+}
+.ethimg{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    top: 50px;
+}
+.tollflex{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 75px;
+    left: 15px;
+}
+.tollcur h3{
+    color: white;
+    font-size: 19px;
+    font-weight: 400;
+}
+.tollcur h2{
+    color: white;
+}
+.tollcurh3{
+    color: white;
+    position: relative;
+    top: 50px;
+    left: 90px;
+    font-family: 100;
+}
+.balance{
+    position: relative;
+    left: 320px;
+    bottom: 70px;
+}
+.balance p{
+    color: #969191;
+    font-size: 22px;
+}
+.balance h1{
+    font-size: 58px; 
+    color: #133a39;
+}
+.balanceup{
+    position: relative;
+    top: 20px;
+    display: flex;
+    color: #133a39;
+}
+.balanceup h3{
+    font-weight: 400;
+}
+.balanceup span{
+    font-size: 18px;
+    position: relative;
+    right: 26px;
+}
+.balanceic{
+    position: relative;
+    right: 130px;
+}
+.listex{
+    position: relative;
+    top: 20px;
+    right: 130px;
+    width: 550px;
+}
+
+.listex .ratesent{
+    display: flex;
+   justify-content: space-around;
+}
+.listex h1{
+    position: relative;
+    top: 20px;
+    color: #133a39;
+}
+.ratesent .form{
+    top: -10px;
+    position: relative;
+    left: 120px;
+    height: 40px;
+    border-radius: 5px;
+    width: 250px;
+    font-size: 16px;
+    border: none;
+    background-color: #f0f0f0;
+    padding-left: 10px;
+}
+.searchicon{
+    position:relative;
+    left: 0px;
+    top: 2px;
+    z-index: 1000;
+    font-size: 25px;
+     
+}
+.ratesent .btn{
+    border: none;
+    position: relative;
+    left: 380px;
+    bottom: 50px;
+    height: 40px;
+    border-radius: 5px;
+    width: 50px;
+}
+.listex .table{
+    display: flex;
+    justify-content: space-evenly;
+    color: #9b9b9b;
+    position: relative;
+    bottom: 10px;
+}
+.tablep2{
+position: relative;
+left: 325px;
+}
+.currates{
+    width: 700px;
+    height: 280px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: fit-content
+} 
+

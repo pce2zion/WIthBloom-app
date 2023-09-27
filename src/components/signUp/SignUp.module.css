@@ -1,0 +1,155 @@
+.signup{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: space-between;
+}  
+.hello{
+     /* padding-right: 220px;  */
+     background-color:#133A39; 
+     color: white;
+     width: 2950px;
+     padding: 120px;
+}
+.hello .hello1{
+    color: white;
+    font-size: 60px;
+    position: relative;
+    top: 150px;
+    width: 480px;
+    text-align: center;
+ }
+ .hello .hello2{
+    font-size: 22px;
+    position: relative;
+    bottom: -180px;
+    text-align: center;
+    left: 35px;
+    
+ }
+ .fill{
+    margin: 40px 0;
+    margin-left: 120px;
+    
+ }
+ .signuph1{
+    font-size: 40px;
+    color: #133A39;
+ }
+ .signupp{
+    color: #cbcbcb;
+    margin-top: 10px;
+    width: 480px;
+    font-size: 18px;
+    font-weight: 400;
+ }
+ .signupform{
+    margin-top: 40px;
+ }
+ .signupform .inputp1{
+    position: relative;
+    bottom: 15px;
+    color: #133A39;
+ }
+ .signupform .name2form{
+height: 55px;
+margin-top: -10px;
+width: 480px;
+padding: 10px;
+font-size: 17px;
+border: 2px solid #133A39;
+border-radius: 7px;
+}
+.signupform .inputp2{
+margin-top: 20px;
+ color: #133A39;
+ }
+ .signupform .lastname{
+    height: 55px;
+    margin-top: 5px;
+    width: 480px;
+    padding: 10px;
+    font-size: 17px;
+    border: 2px solid #133A39;
+    border-radius: 7px;
+    }
+ .signupform .inputp3{
+    margin-top: 20px;
+    color: #133A39;
+ }
+ .signupform .email{
+    height: 55px;
+    margin-top: 5px;
+    width: 480px;
+    padding: 10px;
+    font-size: 17px;
+    border: 2px solid #133A39;
+    border-radius: 7px;
+    }
+    .signupform .inputp4{
+        margin-top: 20px;
+        color: #133A39;
+     }
+     .signupform .password1{
+        height: 55px;
+        margin-top: 5px;
+        width: 480px;
+        padding: 10px;
+        font-size: 17px;
+        border: 2px solid #133A39;
+        border-radius: 7px;
+        }   
+        .signupform .inputp5{
+            margin-top: 20px;
+            color: #133A39;
+         }
+         .signupform .password2{
+            height: 55px;
+            margin-top: 5px;
+            width: 480px;
+            padding: 10px;
+            font-size: 17px;
+            border: 2px solid #133A39;
+            border-radius: 7px;
+            }   
+  .signupbtn{
+    width: 480px;
+    height: 55px;
+    padding: 10px;
+    background-color: #133A39;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    border-radius: 7px;
+    margin-top: 20px;
+  }          
+  .signupbtn:hover{
+    width: 480px;
+     background-color: white;
+     color: #133A39;
+     font-size: 18px;
+     text-align: center;
+     border: 2px solid #6dceca;
+     transition: ease-in-out 0.3s;;
+  } 
+  .olduser{
+    display: flex;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 120px;
+  }    
+  .newusera{
+    position: relative;
+    right: 30px;
+    text-decoration: none;
+    color: #133A39;
+  } 
+  .show{
+    position: relative;
+    position: relative;
+    left: 430px;
+    top: -40px;
+    color: #133A39;
+    
+}    
