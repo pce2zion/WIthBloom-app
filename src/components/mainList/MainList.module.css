@@ -2,7 +2,7 @@
     width: 680px;
     display: flex;
     justify-content: space-between;
-    margin-top: 12px;
+    margin-top: 32px;
     padding-bottom: 20px;
     border-bottom: 1px solid #9ca9a8;
     
@@ -13,7 +13,7 @@
 }
 @media (max-width: 390px){
     .mainlist{
-        width: 220px;
+        width: 410px;
         margin-top: 8px;
         padding-bottom: 10px;
         border-bottom: 1px solid #9ca9a8;

@@ -39,7 +39,7 @@ const Nav = () => {
             <AnimationIcon
             className={classes.anime}
              onClick={handleReturn}
-             sx={{ fontSize:  "50px", marginLeft:  "25px", marginTop: "50px", color:"#133A39" }}/>
+             sx={{ fontSize:  "50px", marginLeft:  "25px", marginTop: "35px", color:"#133A39" }}/>
            <div className={maxWidth === "390px" ? classes.smallnav : classes.navul}>
             <ul  >
                 <li className={classes.navli} style={{ marginLeft: '30px'}}><HomeOutlinedIcon onClick={handleReturn} sx={{fontSize: '30px',  color:"#969191",  '&:hover': { fontSize: '38px',   marginRight: "10px", color:"#133A39" }}}/></li>

@@ -27,6 +27,7 @@ export default function Vertical() {
   return (
     <div className={classes.vert}>
       <IconButton 
+    sx={{lineHeight:"90px"}}
         aria-label="more"
         id="long-button"
         aria-controls={open ? 'long-menu' : undefined}
@@ -36,7 +37,7 @@ export default function Vertical() {
         
         
       >
-        <MoreVertIcon sx={{fontSize:"15px" }}/>
+        <MoreVertIcon sx={{fontSize:"15px",margin:"0", padding:"0",  position:"relative", bottom:"40px"}}/>
       </IconButton>
       <Menu
         id="long-menu"

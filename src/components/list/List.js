@@ -72,10 +72,10 @@ const List = () => {
               setWindowWidth(newWidth);
         
               // Adjust the condition based on your requirements
-              if (newWidth => 389) {
-                setShowIcon(true);
-              } else {
+              if (newWidth <= 389) {
                 setShowIcon(false);
+              } else {
+                setShowIcon(true);
               }
             };
         

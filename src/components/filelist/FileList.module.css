@@ -6,6 +6,8 @@
     overflow-y: auto; 
     overflow-x: hidden;
     max-height: fit-content;
+    top: 10px;
+    
 }
 .filelist p{
     padding: 10px 0px;
@@ -13,5 +15,10 @@
     border-bottom: 1px solid #133a39;
     font-size: 14px;
     width: 400px;
-    
+}
+@media (max-width: 390px){
+    .filelist{
+        display: none;
+        visibility: hidden;
+    }
 }

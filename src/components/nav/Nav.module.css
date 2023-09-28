@@ -1,5 +1,6 @@
 .navul{
     margin-top: 70px;
+    
 }
 .navli{
     list-style-type: none;
@@ -12,6 +13,7 @@
     .navul{
         display: none;
         visibility: hidden;
+        margin: 0;
     }
     .smallnav{
         width: 50px;
@@ -20,7 +22,12 @@
         position: relative;
         font-size: 30px;
         left: 20px;
-        bottom: 30px;
+        bottom: -5px;
     }
-
+    #wrapper {
+        max-width: 940px;
+        margin: 0 auto;
+        padding: 0 5%;
+        clear: both;
+      }
  }

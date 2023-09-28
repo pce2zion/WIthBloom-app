@@ -297,7 +297,9 @@ margin-top: 20px;
   }      */
 }@media (max-width: 820px) {
    .signup{
-
+      margin: 0 auto;
+      padding: 0 5%;
+      clear: both;
       display: block;
      position: relative;
      left: 30px;

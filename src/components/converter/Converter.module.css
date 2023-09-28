@@ -1,6 +1,6 @@
 .converter{
    position: relative;
-   top: 100px;
+   top: 80px;
    left: 550px;
    display: flex;
    justify-content: space-between;
@@ -13,16 +13,18 @@
     color: #133a39;
     position: relative;
     left: 0px;
-    bottom: 40px;
+    bottom: 50px;
 }
 .converter .cp{
     font-size: 16px;
     color: #133a39;
+    position: relative;
+    bottom: 10px;
 }
 .ratebo{
     width: 390px;
     height: 120px;
-    margin-top: 45px;
+    margin-top: 25px;
     display: flex;
     justify-content: space-around;
     padding: 20px;
@@ -126,7 +128,7 @@ label{
     border-radius: 10px;
 }
 .rateresult{
-    margin-top: 30px;
+    margin-top: 10px;
     font-size: 27px;
     color: #133a39;
     width: 400px;
@@ -155,8 +157,18 @@ label{
 .filerate{
     position: relative;
     left: 250px;
-    bottom: 40px;
+    bottom: 0px;
     font-size: 26px;
     font-weight: 600;
     color: #133a39;
+}
+@media (max-width: 390px){
+    .filelist{
+        display: none;
+        visibility: hidden;
+    }
+    .filerate{
+        display: none;
+        visibility: hidden;
+    }
 }
