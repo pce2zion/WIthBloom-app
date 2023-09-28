@@ -2,7 +2,7 @@
     width: 680px;
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 12px;
     padding-bottom: 20px;
     border-bottom: 1px solid #9ca9a8;
     
@@ -11,3 +11,23 @@
     position: relative;
     left: 220px;
 }
+@media (max-width: 390px){
+    .mainlist{
+        width: 220px;
+        margin-top: 8px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #9ca9a8;
+        position: relative;
+        top: 50px;
+        
+    }
+    .mainlistp1{
+        font-size: 12px;
+    }
+    .mainlistp2{
+        position: relative;
+        left: 10px;
+        font-size: 12px;
+    }
+
+ }

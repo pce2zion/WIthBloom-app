@@ -6,8 +6,8 @@
     
 }
 .logindeets{
-    margin: 100px 0;
-    margin-left: 120px;
+    margin: 90px 0;
+    margin-left: 105px;
 }
 .logindeets h1{
     font-size: 40px;
@@ -15,7 +15,7 @@
 }
 .logindeets p{
     color: #9a9a9a;
-    margin-top: 30px;
+    margin-top: 10px;
     width: 300px;
     font-size: 20px;
     font-weight: 400;
@@ -26,12 +26,12 @@
 }
 
 .logindeets .labelemail{
-    margin-top: 40px;
+    margin-top: 0px;
     color: #133A39;
 }
 .nameform{
 height: 55px;
-margin-top: -5px;
+margin-top: -15px;
 width: 380px;
 padding: 10px;
 font-size: 17px;
@@ -39,17 +39,19 @@ border: 2px solid #133A39;
 border-radius: 7px;
 }
 .logindeets .labelpass{
-    margin-top: 30px;
+    margin-top: 20px;
     color: #133A39;
 }
 .passform{
     height: 55px;
-    margin-top: -5px;
+    margin-top: -25px;
     width: 380px;
     padding: 10px;
     font-size: 17px;
     border: 2px solid #133A39;
     border-radius: 7px;
+    position: relative;
+    bottom: 10px;
 }
 .flexforgot{
     display: flex;
@@ -67,14 +69,14 @@ bottom: 20px;
 .flexforgot .remember{
 font-size: 12px;
 position: relative;
-bottom: 50px;
+bottom: 30px;
 left: 10px;
 
 }
 .flexforgot .forgot{
 font-size: 12px;
 position: relative;
-bottom: 50px;
+bottom: 30px;
 left: 10px;
 
 
@@ -90,7 +92,7 @@ left: 10px;
      border: none;
      border-radius: 7px;
      position: relative;
-     bottom: 25px;
+     bottom: -5px;
 }
 .loginbtn:hover{
     width: 378px;
@@ -111,7 +113,7 @@ left: 10px;
 .newuser{
     display: flex;
     position: relative;
-    bottom: 20px;
+    bottom: 0px;
 }
 .newuser .newuserp{
     font-size: 16px;
@@ -224,14 +226,14 @@ border-radius: 7px;
 .flexforgot .remember{
 font-size: 16px;
 position: relative;
-bottom: 57px;
+bottom: 17px;
 left: 10px;
 }
 
 .flexforgot .forgot{
 font-size: 16px;
 position: relative;
-bottom: 57px;
+bottom: 17px;
 left: 117px;
 }  
 .loginbtn{
@@ -245,7 +247,7 @@ left: 117px;
      border: none;
      border-radius: 7px;
      position: relative;
-     bottom: 5px;
+     bottom: -5px;
 }
 .loginbtn:hover{
     width: 450px;
@@ -402,7 +404,7 @@ left: 117px;
         .show{  
             position: relative;
             left: 252px;
-            top: -35px;
+            top: -50px;
             color: #133A39;  
         }
         .newuser{

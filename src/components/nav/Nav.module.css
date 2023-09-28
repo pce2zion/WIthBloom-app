@@ -8,3 +8,19 @@
 .logout{
     margin-top: 80px;
 }
+@media (max-width: 390px){
+    .navul{
+        display: none;
+        visibility: hidden;
+    }
+    .smallnav{
+        width: 50px;
+    }
+    .anime{
+        position: relative;
+        font-size: 30px;
+        left: 20px;
+        bottom: 30px;
+    }
+
+ }

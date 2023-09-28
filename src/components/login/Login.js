@@ -16,7 +16,6 @@ const Login = () => {
             email:"",
             password:"",
             isRemembered: false
-
     })
     const[show, setShow]= useState(false);
     const[message, setMessage]= useState("")
@@ -39,32 +38,32 @@ setShow(prevShow=>!prevShow)
             AOS.init({duration:2000});
          },[])
     
-         //firebase auth    
-         onAuthStateChanged(auth, (currentUser)=>{
-            setUser(currentUser)
-         })
-         const login = async ()=>{
-            try{
-                 await signInWithEmailAndPassword(auth, formData.email, formData.password);
-                }catch(error){
-                    console.log(error.message);
-                }
-               
-         }
+        useEffect(()=>{
+            onAuthStateChanged(auth, (currentUser)=>{
+                setUser(currentUser)
+             },[user])
+        })
+         
+          const login = async ()=>{
+                try{
+                     await signInWithEmailAndPassword(auth, formData.email, formData.password);
+                    }catch(error){
+                        console.log(error.message);
+                    }       
+             }
+       
+         
          const handleSubmit =(event)=>{
             event.preventDefault()
             if(!formData){
                 setError(true)
                 setMessage("Please enter your credentials")
             }
-           else if(formData.password !== user.password && formData.email!== user.email){
-            setError(true)
-                setMessage("Please enter correct credentials")
-            }else{
+            else{
                 setError(false)
                 setMessage("Login success!")
-                login()
-                navigate("/list")  
+                login()             
+             navigate("/list")  
             }
             
     }
@@ -116,7 +115,7 @@ setShow(prevShow=>!prevShow)
                     </form> 
                 <div className={classes.newuser}>
                     <p className={classes.newuserp}>New User?</p>
-                    <Link className={classes.newusera} to="/signUp">Signup</Link>
+                    <Link className={classes.newusera} to="/signup">Signup</Link>
                 </div>
             </div>
             <div className={classes.welback}>

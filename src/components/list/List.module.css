@@ -4,6 +4,9 @@
     left: 30px;
     
 }
+.morevet{
+    color: white;
+}
 .welcome{
     position: relative;
     right: 130px;
@@ -11,14 +14,15 @@
     font-weight: 500;
     color: #133a39;
 }
-.welcome h1{
+.welcome .wee{
     position: relative;
-   top: 50px;
+   top: 45px;
+   font-size: 40px;
 }
-.welcome p{
+.welcome .wep{
    font-weight: 300;
    position: relative;
-   top: 65px;
+   top: 55px;
    
 }
 .wallet{
@@ -115,9 +119,10 @@
     display: flex;
    justify-content: space-around;
 }
-.listex h1{
+.listex .listexh1{
     position: relative;
-    top: 20px;
+    top: -10px;
+    font-size: 35px;
     color: #133a39;
 }
 .ratesent .form{
@@ -154,17 +159,120 @@
     justify-content: space-evenly;
     color: #9b9b9b;
     position: relative;
-    bottom: 10px;
+    bottom: 20px;
 }
 .tablep2{
 position: relative;
 left: 325px;
+font-size: 18px;
 }
+.tablep{
+    font-size: 18px;
+    }
 .currates{
     width: 700px;
-    height: 280px;
+    height: 260px;
     overflow-y: auto;
     overflow-x: hidden;
     max-height: fit-content
 } 
+@media (max-width: 390px){
+    .list{
+        position: relative;
+        left: 130px;
+        padding: 0;
+        width: fit-content;
+        height: 60vh;
+        
+    }
+    .morevet{
+        display: block;
+        position: relative;
+        left: -50px;
+        top: 20px;
+
+    }
+    .anime{
+        position: relative;
+        font-size: 20px;
+        left: 70px;
+    }
+    .welcome{
+        position: relative;
+        right: 130px;
+        width: 370px;
+       
+    }
+    .welcome .wee{
+        position: relative;
+       top: 70px;
+       font-size: 20px;
+    }
+
+    .welcome .wep{
+       width: 210px;
+       font-size: 13px;
+       margin-top: 20px;
+        
+     }
+     .wallet{
+       display: none;
+       visibility: hidden;
+    }
+    .balance{
+        display: none;
+       visibility: hidden;
+    
+    }
+    .listex{
+        position: relative;
+        top: 70px;
+        right: 130px;
+        width: 350px;
+    }
+    .ratesent .form{
+        top: 10px;
+        position: relative;
+        left: -90px;
+        height: 40px;
+        border-radius: 5px;
+        width: 150px;
+        font-size: 12px;
+        border: none;
+        background-color: #f0f0f0;
+        padding-left: 10px;
+    }
+    .listex .table{
+        width: 200px;
+    }
+    .listex .listexh1{
+        position: relative;
+        top: 80px;
+        font-size: 17px;
+
+    }
+    .tablep1{
+        position: relative;
+        top: 100px;
+        font-size: 15px;
+        }
+    .tablep2{
+        position: relative;
+        left: 65px;
+        top: 100px;
+        font-size: 15px;
+        }
+        .currates{
+            width: 300px;
+            height: 960px;
+            position: relative;
+            bottom: -60px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            max-height: fit-content
+        }   
+        .ratesent .btn{
+           display: none;
+        }  
+}
 

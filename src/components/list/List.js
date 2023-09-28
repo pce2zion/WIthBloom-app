@@ -8,6 +8,9 @@ import MainList from "../mainList/MainList";
 import { useLocation } from "react-router-dom";
 import { auth } from "../../fireBaseConfig/firebase-config";
 import { onAuthStateChanged } from "firebase/auth";
+import MoreVertIcon from '@mui/icons-material/MoreVert';
+import Card from "../../helpers/ui/Vertical";
+import Vertical from "../../helpers/ui/Vertical";
 
 
 const List = () => {
@@ -17,6 +20,8 @@ const List = () => {
   const { formData } = location.state || {};
   const [name, setName]= useState("");
   const[user, setUser]=useState({})
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [showIcon, setShowIcon] = useState(true);
   
 
    async function getList (){
@@ -33,7 +38,7 @@ const List = () => {
    formData? setName(formData.firstName): setName('');
     
 
-  }, [data]);
+  }, [data, formData]);
  useEffect(()=>{
     getList();
     },[])
@@ -55,15 +60,38 @@ const List = () => {
          name={list[0]}
          />
         })    
-        onAuthStateChanged(auth, (currentUser)=>{
-            setUser(currentUser)
-         })
-          
+        useEffect(()=>{
+            onAuthStateChanged(auth, (currentUser)=>{
+                setUser(currentUser)
+             })
+        },[user])
+        
+        useEffect(() => {
+            const handleResize = () => {
+              const newWidth = window.innerWidth;
+              setWindowWidth(newWidth);
+        
+              // Adjust the condition based on your requirements
+              if (newWidth => 389) {
+                setShowIcon(true);
+              } else {
+                setShowIcon(false);
+              }
+            };
+        
+            window.addEventListener('resize', handleResize);
+        
+            return () => {
+              window.removeEventListener('resize', handleResize);
+            };
+          }, []);
+        
     return ( 
         <div className={classes.list}>
+        {showIcon &&( <div className={classes.morevet}><Vertical /></div> )}
            <div className={classes.welcome}>
-                <h1>Welcome back {name ? name : ""}</h1> 
-                <p>Check the latest updates on your bloom account</p>
+                <h1 className={classes.wee}>Welcome back {name ? name : ""}</h1> 
+                <p className={classes.wep}>Check the latest updates on your bloom account</p>
            </div>
             <div className={classes.wallflex}>
             <div className={classes.wallet}>
@@ -93,7 +121,7 @@ const List = () => {
                 
            <div className={classes.listex}>
                 <div className={classes.ratesent}>
-                    <h1>Exchange rates</h1>
+                    <h1 className={classes.listexh1}>Exchange rates</h1>
                     
                     <form >
                         <input

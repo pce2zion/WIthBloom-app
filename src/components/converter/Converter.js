@@ -4,7 +4,7 @@ import Coin  from "../../helpers/images/coin.png"
 import { useState, useEffect } from "react";
 import FileList from "../filelist/FileList";
 import KeyboardBackspaceOutlinedIcon from '@mui/icons-material/KeyboardBackspaceOutlined';
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 const Converter = () => {
@@ -19,7 +19,7 @@ const Converter = () => {
     const [alert, setAlert] = useState("");
     const [show, setShow] = useState(false)
     const [rates, setRates]= useState(null);
-    const [items, setItems]= useState("");
+   
     
 
     async function getList (){

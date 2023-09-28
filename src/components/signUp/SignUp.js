@@ -86,12 +86,8 @@ const handleSee2=()=>{
 
 
     }
-const loginhandler = ()=>{
-    <List
-    form={formData.firstName}
-    />
 
-}
+
     return ( 
         <div className={classes.signup}>
                 <div className={classes.hello}>
@@ -146,7 +142,7 @@ const loginhandler = ()=>{
                         value={formData.password}
                         placeholder= "password"
                         />
-                          <span className={classes.show} onClick={handleSee1}> {!show? <VisibilityOffOutlinedIcon/> : <VisibilityOutlinedIcon/>} </span>
+                          <span className={classes.showz} onClick={handleSee1}> {!show? <VisibilityOffOutlinedIcon/> : <VisibilityOutlinedIcon/>} </span>
                         <p className={classes.inputp5}>Confirm password</p> 
                         <input
                         className={classes.password2}
@@ -156,13 +152,13 @@ const loginhandler = ()=>{
                         value={formData.confirmPassword}
                         placeholder= "confirm your password"
                         />
-                          <span className={classes.show} onClick={handleSee2}> {!show? <VisibilityOffOutlinedIcon/> : <VisibilityOutlinedIcon/>} </span>
+                          <span className={classes.showz2} onClick={handleSee2}> {!show? <VisibilityOffOutlinedIcon/> : <VisibilityOutlinedIcon/>} </span>
                         <button className={classes.signupbtn}>Sign up</button>
                         
                     </form> 
                     <div className={classes.olduser}>
                             <p className={classes.newuserp}>Already have an account?</p>
-                            <Link onClick={loginhandler} className={classes.newusera} to= "/">Login</Link>
+                            <Link className={classes.newusera} to= "/">Login</Link>
                         </div>
                        
                         <p style={{color: `${alert ? "green" : "red"}`, width:"500px", fontSize: "15px", position:"relative", top:"-125px", left:"3px"}}>{loginSuccess}</p>

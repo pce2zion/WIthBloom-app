@@ -1,0 +1,23 @@
+.card{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 150px;
+    background-color: beige;
+    border-radius: 5px;
+}
+.card ul{
+    margin: 20px 10px 0px 10px;
+}
+.card li{
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.card li a{
+    text-decoration: none;
+}
+.vert{
+    color: white;
+}

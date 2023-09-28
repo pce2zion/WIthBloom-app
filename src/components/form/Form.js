@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 import {Bar} from "react-chartjs-2";
 import{Chart as ChartJS} from "chart.js/auto"
 import Marquee from "react-fast-marquee";
-import { onAuthStateChanged } from "firebase/auth";
+
 
 
 const Form = (props) => {
@@ -35,7 +35,7 @@ const Form = (props) => {
      getList();
      },[])
  
-     let newList = Object.entries(data);
+   
    
 
     
@@ -50,7 +50,7 @@ const [chartData, setChartData] =useState({
     return ( 
         <div className={classes.form}>
            <h2>Analysis</h2>
-           <div className={classes.ratebox}>
+           <div className={classes.rateboz}>
            <CurrencyExchangeOutlinedIcon className={classes.outicon} sx={{fontSize:"35px", color:"#133a39"}}/>
                 <div className={classes.exflex}>
                        <h3>$4.56</h3>
@@ -67,7 +67,7 @@ const [chartData, setChartData] =useState({
             <Marquee>
             <div className={classes.marq}>
                             <div className={classes.latest}>
-                                <img src={Bitcoin} alt="a btc"  style={{width: "300px", height: "160px"}}/>
+                                <img src={Bitcoin} alt="a btc"  style={{width: "300px", height: "150px", borderRadius:"10px"}}/>
                                 <p>latest exchange rate updates</p>
                             </div>
                     </div>

@@ -1,5 +1,8 @@
 .form{
     box-sizing: border-box;
+    position: relative;
+    right: 20px;
+  
  }
  .form h2{
      font-size: 27px;
@@ -129,27 +132,38 @@
      width: 400px;
  }
  .know{
-     margin-top: 40px;
+     margin-top: 30px;
      width: 400px;    
  }
  
  .knowbarp{
-     margin-top: -80px;
+     margin-top: -90px;
      color: #133a39;
      width: 400px;
+     font-size: 16px;
      text-align: center;
  }
  .marq{
-    margin-top: 30px;
-   width: 800px;
+    margin-top: 35px;
+   width: 900px;
+   position: relative;
+   left: 60px;
    
  }
  .marq .latest{  
-    height: 200px;
+    height: 180px;
     border-radius: 7px;
     padding-left: 30px;
  }
  .marq p{
     margin-left: 40px;
+    font-size: 15px;
+ }
+ @media (max-width: 390px){
+    .form{
+       display: none;
+       visibility: hidden;
+      
+     }
  }
  
