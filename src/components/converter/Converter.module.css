@@ -167,7 +167,7 @@ label{
     .converter{
         position: relative;
         top: 80px;
-        left: 400px;
+        left: 300px;
         display: flex;
         justify-content: space-between;
         box-sizing: border-box; 
@@ -236,7 +236,7 @@ label{
     .formconvert3{
         position: relative;
         bottom: 30px;
-        width: 330px;
+        width: 310px;
         left: 35px;
     }
     .conbtn{
