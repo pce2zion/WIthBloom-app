@@ -30,7 +30,7 @@
  .fill{
     margin: 40px 0;
     margin-left: 120px;
-    
+   
  }
  .signuph1{
     font-size: 40px;
@@ -172,6 +172,12 @@ margin-top: 20px;
         display: block;
         height: 40px;
         max-width: 400px;   
+        position: relative;
+        left: 20px;
+        top: 60px;
+        margin: 0 auto;
+        padding: 0 5%;
+        clear: both;
     }  
    .hello{
       display: none;
@@ -181,121 +187,93 @@ margin-top: 20px;
     .fill{
       margin: 40px 0;
       margin-left: 15px; 
+      margin: 0 auto;
+      padding: 0 5%;
+      clear: both;
    } 
    .signuph1{
       font-size: 40px;
       color: #133A39;
    }
    .signupp{
-      color: #cbcbcb;
+      color: #969595;
       margin-top: 10px;
-      width: 380px;
+      width: 520px;
       font-size: 18px;
       font-weight: 400;
-   }/* 
-   .signupform{
-      margin-top: 40px;
    }
    .signupform .inputp1{
-      position: relative;
-      bottom: 15px;
-      color: #133A39;
-      font-size: 14px;
+      font-size: 20px;
    }
    .signupform .name2form{
-  height: 55px;
-  margin-top: -10px;
-  width: 380px;
-  padding: 10px;
-  font-size: 17px;
-  border: 2px solid #133A39;
-  border-radius: 7px;
-  }
+  width: 560px;
+   }
+   .signupform .inputp2{
+      font-size: 20px;
+   }
 
   .signupform .lastname{
-   height: 55px;
-   margin-top: 5px;
-   width: 380px;
-   padding: 10px;
-   font-size: 17px;
-   border: 2px solid #133A39;
-   border-radius: 7px;
+   width: 560px;
    }
+  
 .signupform .inputp3{
-   margin-top: 20px;
-   color: #133A39;
-   font-size: 14px;
+   font-size: 20px;
 }
 .signupform .email{
-   height: 55px;
-   margin-top: 5px;
-   width: 380px;
-   padding: 10px;
-   font-size: 17px;
-   border: 2px solid #133A39;
-   border-radius: 7px;
-   }
-   .signupform .inputp4{
-       margin-top: 20px;
-       color: #133A39;
-       font-size: 14px;
+   width: 560px;
+ }
+
+ .signupform .inputp4{
+       font-size: 20px;
     }
-    .signupform .password1{
-      height: 55px;
-      margin-top: 5px;
-      width: 380px;
-      padding: 10px;
-      font-size: 17px;
-      border: 2px solid #133A39;
-      border-radius: 7px;
+    .signupform .password1{ 
+      width: 560px;
+     
       }   
       .signupform .inputp5{
-          margin-top: -15px;
-          color: #133A39;
-          font-size: 14px;
+         font-size: 20px;
        }
        .signupform .password2{
-          height: 55px;
-          margin-top: 5px;
-          width: 380px;
-          padding: 10px;
-          font-size: 17px;
-          border: 2px solid #133A39;
-          border-radius: 7px;
+         width: 560px;
           
           }   
           .signupbtn{
-            width: 380px;
-            height: 55px;
-            padding: 10px;
-            background-color: #133A39;
-            color: white;
-            font-size: 18px;
-            text-align: center;
-            border: none;
-            border-radius: 7px;
-            margin-top: 10px;
+            width: 560px;
+           
           }  
           .showz{
             position: relative;
-            left: 30px;
-            top: -40px;
-            color: #133A39;
-            
+            left: 500px;       
+        }
+          .showz2{
+            position: relative;
+            left: 500px;    
         }  
-        .olduser{
-    display: flex;
-    font-size: 16px;
-    margin-top: 10px;
-    margin-left: 20px;
-  }    
+        .signupbtn{
+       position: relative;
+       top: 30px;
+       }  
+        .signupbtn:hover{
+         width: 560px;
+       }  
+  p.warn{
+   position: relative;
+   top: -40px;
+  }
+  .newuserp{
+   position: relative;
+   right: 120px;
+   top: 35px;
+   white-space: nowrap; 
+  }
+   
   .newusera{
     position: relative;
-    right: 30px;
-    text-decoration: none;
-    color: #133A39;
-  }      */
-}@media (max-width: 820px) {
+    top: 35px;
+    right: 110px;
+    
+  }      
+}@media (max-width: 390px) {
    .signup{
       margin: 0 auto;
       padding: 0 5%;
@@ -333,6 +311,11 @@ margin-top: 20px;
    width: 340px;
       height: 50px;
 }  
+.inputp5{
+   white-space: nowrap;
+   font-size: 6px;
+
+}
 .signupbtn{
    width: 340px;
  } 
@@ -371,4 +354,127 @@ margin-top: 20px;
    color: #787d7d;
  }  
 
+}
+@media (max-width: 1250px){
+   .hello{
+      display: none;
+      visibility: hidden;
+      width: 0px;
+    } 
+    .signup{
+      margin: 0 auto;
+      padding: 0 5%;
+      clear: both;
+      display: block;
+     position: relative;
+     left: 80px;
+     top: 90px;     
+  }
+
+.fill{
+   margin: 65px 0;
+   margin-left: 120px; 
+}
+.signuph1{
+   font-size: 50px;
+}
+.signupp{ 
+   margin-top: 20px;
+   width: 800px;
+   font-size: 25px;
+}
+.signupform{
+   margin-top: 60px;
+}
+.signupform .inputp1{
+   font-size: 24px;
+}
+.signupform .name2form{
+height: 75px;
+margin-top: 5px;
+width: 790px;
+font-size: 20px;
+}
+.signupform .inputp2{
+margin-top: 30px;
+font-size: 24px;
+}
+.signupform .lastname{
+   height: 75px;
+margin-top: 5px;
+width: 790px;
+font-size: 20px;
+   }
+.signupform .inputp3{
+   margin-top: 30px;
+font-size: 24px;
+}
+.signupform .email{
+      height: 75px;
+margin-top: 5px;
+width: 790px;
+font-size: 20px;
+   }
+   .signupform .inputp4{
+       margin-top: 30px;
+font-size: 24px;
+    }
+    .signupform .password1{
+      height: 75px;
+      margin-top: 5px;
+      width: 790px;
+      font-size: 20px;
+       }  
+       .signupform .inputp5{
+           margin-top: -5px;
+         font-size: 24px;
+        }
+        .signupform .password2{
+            height: 75px;
+      margin-top: 5px;
+      width: 790px;
+      font-size: 20px;
+           
+           }   
+ .signupbtn{
+   width: 790px;
+   height: 75px;
+   font-size: 24px;
+   margin-top: 20px;
+ }         
+ .signupbtn:hover{
+   width: 790px;
+    background-color: white;
+    color: #133A39;
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid #6dceca;
+    transition: ease-in-out 0.3s;;
+ } 
+ .olduser{
+   font-size: 25px;
+   margin-top: 30px;
+   position: relative;
+   width: 700px;
+   right: 120px;
+ } 
+ .newusera{
+   position: relative;
+   right: 45px;
+   text-decoration: none;
+   color: #133A39;
+ } 
+ .showz{
+   position: relative;
+   left: 720px;
+   top: -50px;
+   
+}    
+.showz2{
+  position: relative;
+  position: relative;
+  left: 720px;
+   top: -50px;
+  
+}  
 }

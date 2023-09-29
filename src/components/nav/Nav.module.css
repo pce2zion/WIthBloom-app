@@ -31,3 +31,9 @@
         clear: both;
       }
  }
+ @media (max-width: 820px){
+    .list{
+       left:190px
+    }
+    
+    }

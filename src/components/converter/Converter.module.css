@@ -162,13 +162,174 @@ label{
     font-weight: 600;
     color: #133a39;
 }
+
 @media (max-width: 390px){
+    .converter{
+        position: relative;
+        top: 80px;
+        left: 400px;
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box; 
+     }
     .filelist{
         display: none;
         visibility: hidden;
+        position: relative;
+        right: 40px;
+
     }
     .filerate{
         display: none;
         visibility: hidden;
     }
+    .keyboard{
+        position: relative;
+        left: 30px;
+       
+    }
+    .converter h2{
+        font-size: 25px;
+        position: relative;
+        left: 30px;
+       
+    }
+    .converter .cp{
+        font-size: 14px;
+       width: 350px;
+       position: relative;
+       left: 30px;  
+    }
+    .ratebo{
+        width: 340px;
+        height: 100px;
+        margin-top: 17px;
+        position: relative;
+       left: 25px;   
+    }
+    label{
+       position: relative;
+       left: 30px;
+    }
+    .label1{
+        position: relative;
+        bottom: 73px;
+        left: 275px;
+    }
+   .formconvert1{
+        width: 130px;
+        position: relative;
+        left: 30px;
+        top: 10px;
+    } 
+   
+    .formconvert2{
+        width: 130px;
+        position: relative;
+        left: 235px;
+        bottom: 66px;   
+    } 
+    .formconlab{
+        position: relative;
+        bottom: 30px;
+    }
+    .formconvert3{
+        position: relative;
+        bottom: 30px;
+        width: 330px;
+        left: 35px;
+    }
+    .conbtn{
+        margin-top: 30px;
+        
+    }
 }
+   @media (max-width: 820px) {
+    .converter{
+       position: relative;
+       top: 150px;  
+       margin: 0 auto;
+       padding: 0 5%;
+       clear: both;
+
+     }
+     .filerate{
+        display: none;
+        visibility: hidden;
+        margin: 0 auto;
+        padding: 0 5%;
+        clear: both;
+    }
+    .converter h2{
+        font-size: 40px;
+        position: relative;  
+    }
+    .converter .cp{
+        font-size: 20px;
+       width: 560px;
+       
+    }
+    .ratebo{
+        width: 540px;
+        position: relative;
+        top: 20px; 
+        height: 180px;  
+    }
+    .outicon{
+        position: relative;
+       font-size: 60px;
+       top: 20px;
+    }
+    .exflex h3{
+        font-size: 40px;
+        position: relative;
+        top: 10px;
+    }
+    .exflex p{
+        font-size: 18px;
+        position: relative;
+        font-weight: 400;
+        top: 20px;
+    }
+    .ethimg{
+        width: 120px;
+        position: relative;
+        left: 250px;
+        bottom: 80px;
+    }
+    .currconvert{
+        position: relative;
+        top: 30px;
+    }
+    label{
+        font-size: 25px;
+    }
+    .formconvert1{
+        width: 200px;
+        height: 60px;
+        position: relative;
+        top: 15px;
+    }
+    .label1{
+        position: relative;
+        left: 420px;
+        font-size:20px;
+        bottom: 95px;
+        white-space: nowrap;
+    }
+    .formconvert2{
+        width: 200px;
+        height: 60px;
+        position: relative;
+        top: -75px;
+        left: 340px;
+    }
+    .formconvert3{
+        width: 540px; 
+    }
+    .conbtn{
+        position: relative;
+        top: 25px;
+        left: 10px;
+    }
+    }

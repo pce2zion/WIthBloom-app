@@ -220,20 +220,20 @@ border-radius: 7px;
     width: 25px;
     height: 25px;
     position: relative;
-    bottom: 30px;  
+   bottom: 40px;
 }
 
 .flexforgot .remember{
 font-size: 16px;
 position: relative;
-bottom: 17px;
+bottom: 67px;
 left: 10px;
 }
 
 .flexforgot .forgot{
 font-size: 16px;
 position: relative;
-bottom: 17px;
+bottom: 67px;
 left: 117px;
 }  
 .loginbtn{
@@ -247,7 +247,7 @@ left: 117px;
      border: none;
      border-radius: 7px;
      position: relative;
-     bottom: -5px;
+     bottom: 15px;
 }
 .loginbtn:hover{
     width: 450px;
@@ -261,7 +261,7 @@ left: 117px;
 .newuser{
     display: flex;
     position: relative;
-    bottom: 10px;
+    bottom: 20px;
 }
 .newuser .newuserp{
     font-size: 20px;
@@ -398,7 +398,7 @@ left: 117px;
         }
         .messagy{
             position: relative;
-            bottom: -10px;
+            bottom: 60px;
             font-size: 9px;
         }
         .show{  
@@ -426,6 +426,126 @@ left: 117px;
             position: relative;
             right: 75px;
             text-decoration: none;
-        }   
+        }
+    }
+        @media (max-width: 910px){
+            .welback{
+                display: none;
+                visibility: hidden;
+            }
+    }  
+    @media (max-width: 1250px){
+        .welback{
+            display: none;
+            visibility: hidden;
+        }
+    
+        .login{
+           position: relative;
+           left: 101px;
+           top: 90px;
+            
+         } 
+         .logindeets h1{
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+        .logindeets p{
+           
+            width: 550px;
+            font-size: 27px;
+            font-weight: 400;
+            margin-top: 20px;
+        } 
+        .loginform{
+            margin-top: 35px; 
+        }
         
-}
+        .logindeets .labelemail{
+            margin-top: 40px;
+            font-size: 30px;
+        }
+        .nameform{
+            height: 80px;
+            margin-top: 5px;
+            width: 530px; 
+            font-size: 20px;
+            
+            } 
+            .logindeets .labelpass{
+                margin-top: 40px;
+                font-size: 30px;
+            }
+            
+            
+            .passform{
+                height: 80px;
+            margin-top: 5px;
+            width: 530px; 
+            font-size: 20px;
+            }
+            .flexforgot{
+               
+                 margin-top: 30px;
+                 width: 830px;
+                font-size: 20px;
+            } 
+            .checkform{
+                width: 25px;
+                height: 25px;
+                position: relative;
+                bottom: 40px;  
+            }
+           
+            .flexforgot .remember{
+            font-size: 17px;
+            position: relative;
+            bottom: 57px;
+            left: 10px;
+            }
+            
+            .flexforgot .forgot{
+                font-size: 17px;
+                position: relative;
+                bottom: 57px;
+            left: -30px;
+            }   
+            .loginbtn{
+                width: 530px;
+                 height: 70px;
+                 font-size: 25px;
+                 position: relative;
+                 bottom: 5px;
+            }
+            .loginbtn:hover{
+                width: 530px;
+           } 
+            .messagy{
+                position: relative;
+                bottom: 40px;
+                font-size: 18px;
+            }
+            .show{  
+                position: relative;
+                left: -56px;
+                top: -5px;
+            }
+            .newuser{
+                position: relative;
+                bottom: -10px;
+                width: 300px;
+            }
+            .newuser .newuserp{
+                font-size: 25px;
+                color: #7b7d7d;
+                margin-top: 45px;
+                
+            }
+            .newuser .newusera{
+                font-size: 25px;
+                margin-top: 45px;
+                position: relative;
+                right: 77px;
+            } 
+    }
+        

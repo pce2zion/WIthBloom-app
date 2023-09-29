@@ -22,7 +22,7 @@ const List = () => {
   const[user, setUser]=useState({})
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [showIcon, setShowIcon] = useState(true);
-  
+  const { formData3 } = location.state || {};
 
    async function getList (){
     try{
@@ -35,8 +35,8 @@ const List = () => {
     }    
  }
  useEffect(() => {
-   formData? setName(formData.firstName): setName('');
-    
+   formData? setName(formData.firstName): setName('')||
+    formData3 ? setName(formData3.firstName): setName('');
 
   }, [data, formData]);
  useEffect(()=>{
@@ -71,7 +71,7 @@ const List = () => {
               const newWidth = window.innerWidth;
               setWindowWidth(newWidth);
         
-              // Adjust the condition based on your requirements
+        
               if (newWidth <= 389) {
                 setShowIcon(false);
               } else {

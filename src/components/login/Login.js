@@ -12,7 +12,7 @@ import { onAuthStateChanged, signInWithEmailAndPassword } from "firebase/auth";
 
 
 const Login = () => {
-    const [formData, setFormData]= useState({
+    const [formData3, setFormData3]= useState({
             email:"",
             password:"",
             isRemembered: false
@@ -28,8 +28,8 @@ setShow(prevShow=>!prevShow)
 }
     const handleChange= (event)=>{
       const {name,type, value, checked} = event.target
-        setFormData(prevFormData=>({
-            ...prevFormData,
+        setFormData3(prevFormData3=>({
+            ...prevFormData3,
             [name]: type === "checkbox"? checked : value
         }))
     }
@@ -46,7 +46,7 @@ setShow(prevShow=>!prevShow)
          
           const login = async ()=>{
                 try{
-                     await signInWithEmailAndPassword(auth, formData.email, formData.password);
+                     await signInWithEmailAndPassword(auth, formData3.email, formData3.password);
                     }catch(error){
                         console.log(error.message);
                     }       
@@ -55,15 +55,28 @@ setShow(prevShow=>!prevShow)
          
          const handleSubmit =(event)=>{
             event.preventDefault()
-            if(!formData){
+            if(user && user.email !== formData3.email){
+                setError(true)
+                setMessage("Invalid email")
+                return;
+            }
+            if(!formData3.password){
                 setError(true)
                 setMessage("Please enter your credentials")
+                return
             }
-            else{
+            if(!formData3.email){
+                setError(true)
+                setMessage("Please enter your credentials")
+                return
+            }
+            else {
                 setError(false)
                 setMessage("Login success!")
                 login()             
-             navigate("/list")  
+             setTimeout(() => {
+                navigate("/list" ,  { state: { formData3} })
+            }, 1000);
             }
             
     }
@@ -82,7 +95,7 @@ setShow(prevShow=>!prevShow)
                         type="text"
                         name='email'
                         onChange={handleChange}
-                        value={formData.email}
+                        value={formData3.email}
                         placeholder= "email"
                         /> <br />
                         <p className={classes.labelpass} >Password</p> <br />
@@ -92,7 +105,7 @@ setShow(prevShow=>!prevShow)
                         type={`${!show ? "password" : "text"}`}
                         name='password'
                         onChange={handleChange}
-                        value={formData.password}
+                        value={formData3.password}
                         placeholder= "password"
                         />
                             <span className={classes.show} onClick={handleSee}> {!show? <VisibilityOffOutlinedIcon/> : <VisibilityOutlinedIcon/>} </span>
@@ -104,7 +117,7 @@ setShow(prevShow=>!prevShow)
                             type="checkbox" 
                             id="isRemembered"
                             onChange={handleChange}
-                            checked={formData.isRemembered}
+                            checked={formData3.isRemembered}
                             name="isRemembered"
                             />
                              <p className={classes.remember}>Remember Password</p> <br />

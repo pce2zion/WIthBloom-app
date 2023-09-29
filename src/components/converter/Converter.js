@@ -105,7 +105,7 @@ const Converter = () => {
     return ( 
         <div className={classes.converter}>
             <div>
-            <KeyboardBackspaceOutlinedIcon sx={{color:"133A39", fontSize:"40px", fontWeight:"500", position:"relative", right:"90px", bottom:"60px"}} onClick={handleBack}/>
+            <KeyboardBackspaceOutlinedIcon className={classes.keyboard} sx={{color:"133A39", fontSize:"40px", fontWeight:"500", position:"relative", right:"90px", bottom:"60px"}} onClick={handleBack}/>
                  <h2>Converter</h2>
                  <p className={classes.cp}>Enter two currency names and an amount below to calculate the exchange rate</p>
                  <div className={classes.ratebo}>
@@ -140,9 +140,10 @@ const Converter = () => {
                                 name="toCurrency"
                             />
                             <br />
-                             <label  htmlFor="amount">Enter Amount</label> <br />
+                             <label className={classes.formconlab} htmlFor="amount">Enter Amount</label> <br />
                             <input
                                     className={classes.formconvert3}
+                                    id="amount"
                                     type="text"
                                     name='amount'
                                     onChange={handleChange}

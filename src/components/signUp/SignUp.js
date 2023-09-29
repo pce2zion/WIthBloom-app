@@ -81,9 +81,8 @@ const handleSee2=()=>{
         setAlert(true)  
         setTimeout(() => {
             navigate("/list" ,  { state: { formData } })
-        }, 2000);
+        }, 1000);
        }
-
 
     }
 
@@ -100,7 +99,7 @@ const handleSee2=()=>{
                 <div className={classes.fill}>
                     <h1 className={classes.signuph1}>Signup</h1>
                     <p className={classes.signupp}>Welcome to Withbloom. Please fill in your correct details, 
-                    let us take you on an adventure</p>
+                    let us take you on an adventure!</p>
 
                     <form onSubmit={handleSubmit} className={classes.signupform}>
                         <p className={classes.inputp1}>First name</p> 
@@ -161,7 +160,7 @@ const handleSee2=()=>{
                             <Link className={classes.newusera} to= "/">Login</Link>
                         </div>
                        
-                        <p style={{color: `${alert ? "green" : "red"}`, width:"500px", fontSize: "15px", position:"relative", top:"-125px", left:"3px"}}>{loginSuccess}</p>
+                        <p className={classes.warn} style={{color: `${alert ? "green" : "red"}`, width:"500px", fontSize: "15px", position:"relative", top:"-125px", left:"3px"}}>{loginSuccess}</p>
 
                 </div>
         </div>
